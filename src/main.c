@@ -4,6 +4,7 @@
 //  Date: Mon 13/12/2021
 
 #include <stdio.h>
+#include <stdlib.h>
 
 #define THING 166
 #define FREEZING_PT 32.0f
@@ -31,5 +32,5 @@ int main(void) {
     // printf("i is %f\n", i);
     
     printf("%.1f\n", fahrenheit_to_celsius(212.0));
-    return 0;
+    exit(0);
 }
