@@ -1,23 +1,23 @@
 main :
-	gcc src/main.c -O -Wall -W -pedantic -ansi -std=c99 -o bin/main
+	./build.sh main && ./bin/main
 
 format :
-	gcc src/format.c -o bin/format -O -Wall -W -pedantic -ansi -std=c99 && ./bin/format
+	./build.sh format && ./bin/format
 
 expr :
-	gcc src/expr.c -o bin/expr -lm -O -Wall -W -pedantic -ansi -std=c99 && ./bin/expr
+	./build.sh expr && ./bin/expr
 
 ptr :
-	gcc src/ptr.c -o bin/ptr -O -Wall -W -pedantic -ansi -std=c99 && ./bin/ptr
-
-chap4 :
-	gcc src/exs/chap4.c -o bin/chap4 -O -Wall -W -pedantic -ansi -std=c99 && ./bin/chap4
+	./build.sh ptr && ./bin/ptr
 
 str :
-	gcc src/strcat.c -o bin/strcat -O -Wall -W -pedantic -ansi -std=c99 && ./bin/strcat
+	./build.sh str && ./bin/str
 
 logic :
-	gcc src/logic.c -o bin/logic -O -Wall -W -pedantic -ansi -std=c99 && ./bin/logic
+	./build.sh logic && ./bin/logic
 
 getch :
-	gcc src/getch.c -o bin/getch -O -Wall -W -pedantic -ansi -std=c99 && ./bin/getch
+	./build.sh getch && ./bin/getch
+
+sum :
+	./build.sh sum && ./bin/sum
