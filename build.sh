@@ -7,4 +7,4 @@ SRC="src/$1.c"
 O="bin/$1"
 LIBS="-lm"
 
-cc $CFLAGS -o $O $SRC $LIBS
+gcc $CFLAGS -o $O $SRC $LIBS
