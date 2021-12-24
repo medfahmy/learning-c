@@ -21,3 +21,15 @@ getch :
 
 sum :
 	./build.sh sum && ./bin/sum
+
+sqs :
+	./build.sh sq-table && ./bin/sq-table
+
+bs :
+	./build.sh binary-search && ./bin/binary-search
+
+goto :
+	./build.sh goto && ./bin/goto
+
+loop :
+	./build.sh loop && ./bin/loop
