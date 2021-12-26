@@ -33,3 +33,6 @@ goto :
 
 loop :
 	./build.sh loop && ./bin/loop
+
+types :
+	./build.sh types && ./bin/types
