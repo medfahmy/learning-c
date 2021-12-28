@@ -36,3 +36,6 @@ loop :
 
 types :
 	./build.sh types && ./bin/types
+
+arr :
+	./build.sh arr && ./bin/arr
