@@ -39,3 +39,6 @@ types :
 
 arr :
 	./build.sh arr && ./bin/arr
+
+conv :
+	./build.sh conv && ./bin/conv
