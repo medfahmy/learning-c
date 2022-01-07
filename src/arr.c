@@ -2,10 +2,7 @@
 #include <stdbool.h>
 
 #define N 10
-
-unsigned long length(int * a) {
-    return (sizeof a / sizeof a[0]);
-}
+#define SIZE ((int) (sizeof(a) / sizeof(a[0])))
 
 void reverse_numbers() {
     int a[N];
@@ -49,9 +46,33 @@ void check_for_rep() {
     printf("No repeated digit\n");
 }
 
+void interest() {
+    int inter, years;
+
+    printf("enter interest rate: ");
+    scanf("%d", &inter);
+    printf("enter number of years: ");
+    scanf("%d", &years);
+
+    float a[years];
+
+    a[0] = 100 + inter;
+
+    for (int i = 1; i < years; i++) {
+        a[i] = a[i-1] * (1 + ((float) inter)/100);
+    }
+
+    printf("%7s: %6d \n", "Years", inter);
+    for (int i = 0; i < years; i++) {
+        printf("%7d: %4.2f \n", i+1, a[i]);
+    }
+}
+
 int main() {
     int a[N];
-    printf("%zu\n", length(a));
+    printf("%d\n", SIZE);
+
+    interest();
 
     // printf("%d\n", typeof(a));
 
