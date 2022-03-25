@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 
-// void strcat(char* dest, char* src) {
-    // while (*dest) dest++;
-    // while (*dest++ = *src++);
-// }
+void strcat(char* dest, char* src) {
+    while (*dest) dest++;
+    while (*dest++ = *src++);
+}
 
 int main(void) {
     char src[50], dest[50];
